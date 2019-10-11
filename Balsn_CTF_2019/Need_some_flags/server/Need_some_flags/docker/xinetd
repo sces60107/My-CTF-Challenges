@@ -1,0 +1,15 @@
+service need_some_flags
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/Need_some_flags/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = ctf
+        port = 4869
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

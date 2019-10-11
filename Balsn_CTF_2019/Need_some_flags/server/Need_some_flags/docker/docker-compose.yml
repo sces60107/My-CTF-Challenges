@@ -1,0 +1,6 @@
+need_some_flags:
+    build: ./
+    ports:
+        - "10121:4869"
+    expose:
+        - "4869"
